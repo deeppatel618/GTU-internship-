@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/ic_gtulogo2svg.xml" value="0.206" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/logout.xml" value="0.1455" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/rectanglebackground.xml" value="0.234" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_captcha.xml" value="0.10552536231884058" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_login2.xml" value="0.264" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_main.xml" value="0.264" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_main_page.xml" value="0.176" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_photo_section.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/profile_photo.xml" value="0.18181818181818182" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/menu/navigation_menu.xml" value="0.2" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/menu/options_menu.xml" value="0.264" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.206" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="HardcodedText"
+    >
+    <item
+        android:id="@+id/Home"
+        android:title="Home"
+        android:checked="true"/>
+
+    <item
+        android:id="@+id/certificate_request"
+        android:title="Certificate Request" />
+
+    <item
+        android:id="@+id/activity_points_100"
+        android:title="100 Activity Points" />
+    <item
+        android:id="@+id/exam_form"
+        android:title="Exam form"/>
+    <item
+        android:id="@+id/answerSheetView"
+        android:title="Answer Sheet View">
+    </item>
+    <item
+        android:id="@+id/convocation"
+        android:title="convocation">
+    </item>
+    <item
+        android:id="@+id/recheckHistory"
+        android:title="Recheck/Reassess History">
+    </item>
+    <item
+        android:id="@+id/degreeVerification"
+        android:title="Degree Verification">
+    </item>
+    <item
+        android:id="@+id/marksheetTracker"
+        android:title="Marksheet Tracker"/>
+    <item
+        android:id="@+id/certificateTracking"
+        android:title="Certificate Tracking"/>
+    <item
+        android:id="@+id/myResult"
+        android:title="My Result"/>
+    <item
+        android:id="@+id/gradeHistory"
+        android:title="Grade History"/>
+    <item android:id="@+id/checkPaymentStatus"
+        android:title="Check Payment Status"/>
+    <item
+        android:id="@+id/viewMyLast10Logs"
+        android:title="View my last 10 logs"
+        />
+
+</menu>
