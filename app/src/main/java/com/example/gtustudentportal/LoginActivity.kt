@@ -24,9 +24,12 @@ import kotlin.random.Random
 
 class LoginActivity : AppCompatActivity() {
 
-    private val SAFETY_NET_API_SITE_KEY ="6Ld-wr0kAAAAAFIg0mSYgJrlTRhuHWID-y3itUmh"
+    companion object{
+        private val SAFETY_NET_API_SITE_KEY ="6Ld-wr0kAAAAAFIg0mSYgJrlTRhuHWID-y3itUmh"
+    }
+
     private val api:IreCAPTCHA
-        get() = RetrofitClient.getclient("http://10.0.2.2/googleRecaptcha/").create(IreCAPTCHA::class.java)
+        get() = RetrofitClient.getclient("https://gtustudentportal.000webhostapp.com/").create(IreCAPTCHA::class.java)
 
         lateinit var mService:IreCAPTCHA
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -37,8 +40,7 @@ class LoginActivity : AppCompatActivity() {
         mService = api
 
         var submit= findViewById<Button>(R.id.submit_loginPage)
-        var captchaTv=findViewById<TextView>(R.id.captchaTv);
-        captchaTv.text=captcha();
+        var captchaTv=findViewById<TextView>(R.id.captchaTv)
         Toast.makeText(this, "${captchaTv.text}", Toast.LENGTH_SHORT).show()
 
         submit.setOnClickListener {
@@ -50,7 +52,6 @@ class LoginActivity : AppCompatActivity() {
                     {
                         verifyToKenOnServer(response.tokenResult!!)
                     }
-
                 }
                 .addOnFailureListener{ e ->
                     if(e is ApiException)
@@ -63,13 +64,8 @@ class LoginActivity : AppCompatActivity() {
                     }
                 }
 
-            val intent= Intent(this@LoginActivity,MainPage::class.java)
-            startActivity(intent);
+
         }
-
-
-
-
     }
 
     private fun verifyToKenOnServer(response: String) {
@@ -80,63 +76,30 @@ class LoginActivity : AppCompatActivity() {
         mService.validate(response)
             .enqueue(object :Callback<Myresponse>{
                 override fun onResponse(call: Call<Myresponse>, response: Response<Myresponse>) {
-
                     dialog.dismiss()
-                    if(response!!.body()!!.isSuccess)
+//                    Log.d("EMerror", response.body()!!.success.toString())
+                    if(response!!.body()!!.success){
                         Toast.makeText(this@LoginActivity, "comment posted", Toast.LENGTH_SHORT).show()
-                    else
-                        Toast.makeText(this@LoginActivity, response.body()!!.msg, Toast.LENGTH_SHORT).show()
+                        Log.d("Success","Success")
+                        val intent= Intent(this@LoginActivity,MainPage::class.java)
+                        startActivity(intent)
+                    }
+                    else{
+                        Toast.makeText(this@LoginActivity, response.body()!!.message, Toast.LENGTH_SHORT).show()
+                        Log.d("Fail","Fail")
+                    }
+
                 }
 
                 override fun onFailure(call: Call<Myresponse>, t: Throwable) {
                     dialog.dismiss()
                     Log.d("EMerror",t.message!!)
                 }
-
             })
 
     }
 
-    fun captcha() : String{
-        // Create a random list with 4 values of 0 and 1
-        val randomValues = List(4)
-        {
-            Random(System.currentTimeMillis()).nextInt(0, 2) }
 
-        var captchaString:String="";
-        for (i in randomValues)
-        {
-            //0 indicates that there is an alphabet
-            if(i==0)
-            {
-                captchaString+=('A'..'Z').random();
-            }
-            //1 indicates that there is number
-            else{
-                captchaString+=('1'..'9').random();
-            }
-//            captchaString+=listOf(('0'..'9'), ('a'..'z'), ('A'..'Z')).flatten().random()
-        }
-        //var rand =
 
-        return captchaString;
-    }
-    override fun onStart() {
-
-        super.onStart()
-    }
-
-    override fun onPause() {
-
-        super.onPause()
-    }
-    override fun onAttachedToWindow() {
-
-        super.onAttachedToWindow()
-    }
-    override fun onRestart() {
-
-        super.onRestart()
-    }
 
 }

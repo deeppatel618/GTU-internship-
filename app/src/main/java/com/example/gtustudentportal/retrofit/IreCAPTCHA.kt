@@ -9,6 +9,6 @@ import java.net.CacheResponse
 
 interface IreCAPTCHA {
     @FormUrlEncoded
-    @POST("google recaptcha")
+    @POST("googleRecaptcha.php")
     fun validate(@Field("recaptcha-response") response: String): Call<Myresponse>
 }
