@@ -1,7 +1,7 @@
 <?php
 
 $ch= curl_init();
-$secretKey = '6Ld-wr0kAAAAAGcs-uhgq2J5dzIw0HfluUZ5Gvuc';
+$secretKey = 'Replace with secret Key';
 $captcha= isset($_POST['recaptcha-response']) && !empty($_POST['recaptcha-response'])? $_POST['recaptcha-response']:'hello';
 
 curl_setopt_array($ch,[
