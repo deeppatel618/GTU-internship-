@@ -3,15 +3,20 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/academic.xml" value="0.1755" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/background.xml" value="0.207" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/ic_baseline_person_24.xml" value="0.1755" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/ic_gtulogo2svg.xml" value="0.206" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/logout.xml" value="0.1455" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/profile.xml" value="0.1755" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/drawable/rectanglebackground.xml" value="0.234" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_captcha.xml" value="0.10552536231884058" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_login2.xml" value="0.264" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_main_page.xml" value="0.176" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_photo_section.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/activity_temp_view.xml" value="0.23854166666666668" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/layout/profile_photo.xml" value="0.18181818181818182" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/menu/navigation_menu.xml" value="0.2" />
         <entry key="..\:/Users/Deep Patel/AndroidStudioProjects/GTUStudentPortal/app/src/main/res/menu/options_menu.xml" value="0.264" />

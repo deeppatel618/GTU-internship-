@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:usesCleartextTraffic="true"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -15,10 +14,16 @@
         android:roundIcon="@mipmap/gtulogo"
         android:supportsRtl="true"
         android:theme="@style/Theme.GTUStudentPortal"
+        android:usesCleartextTraffic="true"
         tools:targetApi="31">
         <activity
+            android:name=".tempView"
+            android:exported="true" >
+
+        </activity>
+        <activity
             android:name=".MainPage"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".LoginActivity"
             android:exported="false" />

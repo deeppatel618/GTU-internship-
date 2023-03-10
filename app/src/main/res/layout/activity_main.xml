@@ -6,10 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity"
     android:background="@color/Theme">
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="214dp"
         android:layout_height="186dp"
+        android:adjustViewBounds="false"
+        android:rotation="0"
+        android:rotationX="0"
+        android:rotationY="0"
         android:src="@mipmap/gtulogo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"

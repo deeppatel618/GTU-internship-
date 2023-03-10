@@ -45,7 +45,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText5"
+        android:id="@+id/et_eno"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Enrollement no/ Username"
@@ -57,7 +57,7 @@
         tools:ignore="MissingConstraints" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/et_pwd"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:hint="Password"
@@ -69,50 +69,19 @@
         app:layout_constraintVertical_bias="0.31"
         tools:ignore="MissingConstraints" />
 
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="160dp"
-        android:layout_height="44dp"
-        android:hint="Captcha"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.234"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.496"
-        tools:ignore="MissingConstraints" />
-
-    <TextView
-        android:id="@+id/captchaTv"
-        android:layout_width="160dp"
-        android:layout_height="44dp"
-        android:hint="Captcha"
-        android:text="690C"
-        android:textAlignment="center"
-        android:textSize="25dp"
-        app:flow_verticalAlign="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.936"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.512"
-        tools:ignore="MissingConstraints"
-        />
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:clickable="true"
         android:text="Forgot Password?"
+        android:textSize="15dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.895"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.564"
-        tools:ignore="MissingConstraints"
-        android:textSize="15dp"
-        android:clickable="true"/>
+        app:layout_constraintVertical_bias="0.41000003"
+        tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/textView2"
@@ -125,12 +94,12 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.778"
+        app:layout_constraintVertical_bias="0.69"
         tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/submit_loginPage"
-        android:layout_width="100dp"
+        android:layout_width="130dp"
         android:layout_height="wrap_content"
         android:background="@color/Theme"
         android:text="SUBMIT"
@@ -139,7 +108,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view"
-        app:layout_constraintVertical_bias="0.676"
+        app:layout_constraintVertical_bias="0.61"
         tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

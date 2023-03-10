@@ -1,5 +1,6 @@
 package com.example.gtustudentportal
 
+import android.app.ActivityOptions
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -12,7 +13,8 @@ class MainActivity : AppCompatActivity() {
         supportActionBar?.hide();
         Handler().postDelayed({
                               val intent = Intent(this@MainActivity,LoginActivity::class.java);
-            startActivity(intent);
+            startActivity(intent,
+                ActivityOptions.makeSceneTransitionAnimation(this).toBundle())
             finish();
         },2000);
    }
